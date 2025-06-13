@@ -52,7 +52,7 @@ QuizHub/
 │   ├── components/         # Quiz card UI
 │   ├── App.jsx             # Main quiz logic
 │   └── main.jsx            # Entry point
-├── assets/                 # Screenshots
+|   |___assets              # Screenshots
 ├── package.json
 ├── vite.config.js
 └── README.md
