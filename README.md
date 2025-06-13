@@ -8,16 +8,16 @@ QuizHub is a lightweight and interactive quiz application built with **React** a
  📸 Screenshots
 
  🏠 Home Page
-![Home](./assets/home.png)
+![Home](./src/assets/home.png)
 
 ❓ Question generation
-![Home](./assets/generate.png)
+![Home](./src/assets/generate.png)
 
  ❓ Question Reveal
-![Question](./assets/question.png)
+![Question](./src/assets/question.png)
 
  🧾 Answer Shown
-![Answer](./assets/answer.png)
+![Answer](./src/assets/answer.png)
 
 ---
 
