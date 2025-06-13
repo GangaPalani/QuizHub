@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  list-style:none;
+  text-decoration:none;
+  scroll-behavior: smooth;
+}
+html,body{
+  
+  overflow-x:hidden;
+  background-color:#111;
+
+}
+:root{
+  --black-color:#000;
+  --white-color:#fff;
+  --OpenSans:"Open Sans", sans-serif;
+  --transition-regular:.3s;
+  --transition-slow:.6s;
+
+}
+/* NavBar*/
+
+.nav-wrap{
+  z-index: 5;
+}
+.navbar .logo{
+  font-size:2rem;
+  line-height:2rem;
+  font-family: var(--OpenSans);
+  font-weight:700;
+
+}
+.navbar button{
+  font-family:var(--OpenSans);
+  padding:10px 20px;
+
+}
+
+.quiz-card {
+  perspective: 1000px;
+  cursor: pointer;
+  height: 280px;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* added for vertical stacking */
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform var(--transition-slow) ease;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.quiz-card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: center;
+  background-color: var(--black-color);  /* fixed no space */
+  color: var(--white-color);
+  z-index: 1;
+  border-radius: 10px !important;
+  position: relative; /* added */
+}
+
+.card-front:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-color);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.card-front:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(90deg, rgb(225, 143, 225), #e02994d0);
+  z-index: -1;
+  border-radius: 12px;
+  opacity: 0.5;
+}
+
+.card-front, 
+.card-back{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  padding:1rem;
+  border-radius: 12px !important;
+ box-shadow:0 8px 24px rgba(0, 0, 0, 0.1);
+
+}
+.card-front h6 ,
+.card-back h6{
+  font-size:1.2 rem;
+}
+
+.card-back p{
+  font-size: 2rem;
+}
+
+.card-front ul li{
+  font-size: 1.2rem;
+}
+
+.card-front span{
+  background: linear-gradient(90deg, rgb(213, 70, 213), #eb2b9bd0);
+  padding:5px 10px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  border-radius:5px;
+
+}
+.card-back{
+   background: linear-gradient(90deg, rgb(236, 183, 236), #e40487d0);
+   color:var (--white-color);
+   transform: rotateY(180deg);
+   z-index:1;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+}
+
+
