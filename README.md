@@ -1,12 +1,58 @@
-# React + Vite
+🎯 QuizHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+QuizHub is a lightweight and interactive quiz application built with **React** and **Vite**. It presents multiple-choice questions in a clean, card-like format where users can click an option to instantly see the correct answer — no scoring, no pressure. Just tap, learn, and enjoy.
 
-Currently, two official plugins are available:
+🌐 **Live Demo**: [https://quiz-hub-ganga.vercel.app](https://quiz-hub-ganga.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+ 📸 Screenshots
 
-## Expanding the ESLint configuration
+ 🏠 Home Page
+![Home](./assets/home.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+❓ Question generation
+![Home](./assets/generate.png)
+
+ ❓ Question Reveal
+![Question](./assets/question.png)
+
+ 🧾 Answer Shown
+![Answer](./assets/answer.png)
+
+---
+
+ 🚀 Features
+
+- ✅ Click to reveal the correct answer
+- 🧠 Learn-as-you-go format (no scoring)
+- 💡 Minimalist UI for distraction-free focus
+- 🔁 Retake or refresh for a new round
+- 📱 Fully responsive design
+
+---
+
+🛠️ Tech Stack
+
+| Technology  | Description                  |
+|-------------|------------------------------|
+| React       | Component-based frontend     |
+| Vite        | Fast bundler and dev server  |
+| JavaScript  | Core quiz logic              |
+| HTML & CSS  | UI layout and design         |
+| Vercel      | Deployment and hosting       |
+
+---
+
+📁 Project Structure
+
+```bash
+QuizHub/
+├── public/                 # Static files
+├── src/
+│   ├── components/         # Quiz card UI
+│   ├── App.jsx             # Main quiz logic
+│   └── main.jsx            # Entry point
+├── assets/                 # Screenshots
+├── package.json
+├── vite.config.js
+└── README.md
